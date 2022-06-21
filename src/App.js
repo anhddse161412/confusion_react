@@ -4,6 +4,7 @@ import React from "react";
 import { Navbar, NavbarBrand } from "reactstrap";
 import Menu from "./components/MenuComponent";
 import { DISHES } from "./shared/dishes";
+import Main from "./components/MainComponent";
 
 // function App() {
 //    return (
@@ -26,12 +27,13 @@ class App extends React.Component {
    render() {
       return (
          <div className="App">
-            <Navbar dark color="primary">
+            {/* <Navbar dark color="primary">
                <div className="container">
                   <NavbarBrand href="/">Ristorante Con Fusion</NavbarBrand>
                </div>
             </Navbar>
-            <Menu dishes={this.state.dishes} />
+            <Menu dishes={this.state.dishes} /> */}
+            <Main />
          </div>
       );
    }

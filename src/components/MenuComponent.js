@@ -29,7 +29,7 @@ import DishDetail from "./DishdetailComponent";
 //       const menu = this.props.dishes.map((dish) => {
 //          return (
 //             <div key={dish.id} className="col-12 col-md-5 m-1">
-//                <Card onClick={() => this.onDishSelect(dish)}>
+//                <Card onClick={() => this.props.click(dish)}>
 //                   <CardImg width="100%" src={dish.image} alt={dish.name} />
 //                   <CardImgOverlay>
 //                      <CardTitle>{dish.name}</CardTitle>
@@ -51,7 +51,7 @@ import DishDetail from "./DishdetailComponent";
 // }
 function RenderMenuItem({ dish, onClick }) {
    return (
-      <Card onClick={() => onClick(dish.id)}>
+      <Card onClick={() => onClick(dish)}>
          <CardImg width="100%" src={dish.image} alt={dish.name} />
          <CardImgOverlay>
             <CardTitle>{dish.name}</CardTitle>
@@ -64,7 +64,7 @@ const Menu = (props) => {
    const menu = props.dishes.map((dish) => {
       return (
          <div key={dish.id} className="col-12 col-md-5 m-1">
-            <RenderMenuItem dish={dish} onClick={props.onClick} />
+            <RenderMenuItem dish={dish} onClick={props.click} />
          </div>
       );
    });

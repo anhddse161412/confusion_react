@@ -6,7 +6,6 @@ import {
    CardBody,
    CardTitle,
    CardSubtitle,
-   Button,
 } from "reactstrap";
 function RenderCard({ item }) {
    return (

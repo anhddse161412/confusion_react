@@ -1,8 +1,26 @@
-import React, { Component } from "react";
+import React from "react";
+import {
+   Breadcrumb,
+   BreadcrumbItem,
+   Card,
+   CardImg,
+   CardImgOverlay,
+   CardTitle,
+} from "reactstrap";
 
+import { Link } from "react-router-dom";
 function Contact(props) {
    return (
-      <div classNameName="container">
+      <div className="container">
+         <div className="row">
+            <Breadcrumb>
+               <BreadcrumbItem>
+                  <Link to="/home">Home</Link>
+               </BreadcrumbItem>
+
+               <BreadcrumbItem active>contact US</BreadcrumbItem>
+            </Breadcrumb>
+         </div>
          <div className="row row-content text-justify">
             <div className="col-12 ">
                <h3>Location Information</h3>

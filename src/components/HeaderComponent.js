@@ -55,7 +55,7 @@ class Header extends React.Component {
                            </NavLink>
                         </NavItem>
                         <NavItem>
-                           <NavLink className="nav-link" to="/contractus">
+                           <NavLink className="nav-link" to="/contactus">
                               <span className="fa fa-address-card fa-lg"></span>{" "}
                               Contract Us
                            </NavLink>

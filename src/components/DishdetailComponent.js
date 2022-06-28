@@ -4,7 +4,6 @@ import {
    BreadcrumbItem,
    Card,
    CardImg,
-   CardImgOverlay,
    CardBody,
    CardText,
    CardTitle,
